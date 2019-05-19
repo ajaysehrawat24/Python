@@ -1,0 +1,24 @@
+class first:
+    def search(self,arr,num):
+        a=0
+        l=len(arr)
+        flag=False
+        
+        while((a<l) and (flag==False)):
+            m=(a+l)/2;
+            if(arr[m]==num):
+                print('num found')
+                flag=True
+                break
+            
+            elif(num>arr[m]):
+                a=m+1
+                
+            elif(num<arr[m]):
+                l=m-1
+        if(flag==False):
+            print('num not found')
+            
+o=first()
+arr=[1,2,3,4,5,56,67];
+o.search(arr,435)
