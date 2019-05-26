@@ -1,0 +1,30 @@
+class leet:
+    def substr(self, input):
+        in_length = len(input)
+        visited = [1, 2, 4, 5]
+        visited.clear()
+        max = 1
+        maxf = 1
+        visited.append(input[0])
+        index = 1
+        for j in range(0, in_length-2):
+            for i in range(index, in_length-1):
+                if not(input[i] in visited):
+                    visited.append(input[i])
+                    max = len(visited)
+                else:
+                    visited.clear()
+                    if max > maxf:
+                        maxf = max
+                        break
+        print(maxf)
+
+
+str='abserabnmklpoiuyt'
+ob = leet()
+ob.substr(str)
+
+
+
+
+
