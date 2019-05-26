@@ -1,8 +1,7 @@
 class leet:
     def substr(self, input):
         in_length = len(input)
-        visited = [1, 2, 4, 5]
-        visited.clear()
+        visited = []
         max = 1
         maxf = 1
         visited.append(input[0])
