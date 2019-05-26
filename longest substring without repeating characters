@@ -1,4 +1,4 @@
-class leet:
+class py:
     def substr(self, input):
         in_length = len(input)
         visited = []
@@ -17,11 +17,6 @@ class leet:
                         maxf = max
                         break
         print(maxf)
-
-
-str='abserabnmklpoiuyt'
-ob = leet()
-ob.substr(str)
 
 
 
