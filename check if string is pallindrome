@@ -1,0 +1,11 @@
+class python:
+    def pallin(self,st):
+        st1=st[::-1]
+        if(st==st1):
+            print('string is pallindrome')
+        else:
+            print('string is not a pallindrome')
+
+
+ob=python();
+ob.pallin('aba')
